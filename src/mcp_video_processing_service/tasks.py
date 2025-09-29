@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import logging
 import tempfile
-from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Optional
 from uuid import uuid4
@@ -22,7 +21,7 @@ from .ffmpeg.command_builder import (
 )
 from .ffmpeg.probe import probe_streams, summarize_media
 from .ffmpeg.runner import FFmpegExecutionError, execute_ffmpeg
-from .job_models import JobRecord, JobStatus, ProgressSnapshot
+from .job_models import JobStatus, ProgressSnapshot
 from .job_store import JobStoreFactory, RedisJobStoreSync
 from .payload_client import MediaAsset, PayloadMediaClient
 
